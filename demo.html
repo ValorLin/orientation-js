@@ -5,9 +5,29 @@
     <title>Orientation.JS</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <style type="text/css">
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
         .visible-when-portrait,
         .visible-when-landscape {
             display: none;
+            width: 80px;
+            height: 127px;
+            background-image: url(img/phone.png);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .visible-when-landscape {
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
         }
 
         .portrait .visible-when-portrait,
@@ -17,12 +37,8 @@
     </style>
 </head>
 <body>
-<div class="visible-when-portrait">
-    <h2>This is only visible when <strong>portrait</strong></h2>
-</div>
-<div class="visible-when-landscape">
-    <h2>This is only visible when <strong>landscape</strong></h2>
-</div>
+<div class="visible-when-portrait"></div>
+<div class="visible-when-landscape"></div>
 <script type="text/javascript" src="orientation.js"></script>
 </body>
 </html>
