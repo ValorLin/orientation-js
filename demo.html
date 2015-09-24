@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orientation.JS</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style type="text/css">
+        .visible-when-portrait,
+        .visible-when-landscape {
+            display: none;
+        }
+
+        .portrait .visible-when-portrait,
+        .landscape .visible-when-landscape {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="visible-when-portrait">
+    <h2>This is only visible when <strong>portrait</strong></h2>
+</div>
+<div class="visible-when-landscape">
+    <h2>This is only visible when <strong>landscape</strong></h2>
+</div>
+<script type="text/javascript" src="orientation.js"></script>
+</body>
+</html>
