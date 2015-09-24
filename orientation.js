@@ -5,6 +5,9 @@
     var bodyClass = document.body.classList;
 
     var Orientation = _window.Orientation = {
+        isPortrait: function () {
+            return !this.isLandscape();
+        },
         isLandscape: function () {
             return window.orientation === 90 || window.orientation === -90;
         },
