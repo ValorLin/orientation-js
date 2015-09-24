@@ -9,7 +9,7 @@
             return window.orientation === 90 || window.orientation === -90;
         },
         detectOrientation: function () {
-            if (this.isLandscape()) {
+            if (Orientation.isLandscape()) {
                 bodyClass.add(LANDSCAPE);
                 bodyClass.remove(PORTRAIT);
             } else {
