@@ -1,6 +1,6 @@
 {
   "name": "orientation-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "dist/orientation.js",
   "scripts": {
@@ -10,16 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/weilao/orientation-js.git"
   },
-  "author": "",
+  "author": {
+    "name": "威老",
+    "email": "qqq123026689@126.com",
+    "url": "http://doctype-html.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/weilao/orientation-js/issues"
   },
   "homepage": "https://github.com/weilao/orientation-js#readme",
   "devDependencies": {
-    "gulp": "latest",
+    "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
-    "gulp-uglify": "latest",
-    "gulp-umd": "latest"
+    "gulp-uglify": "^1.5.3",
+    "gulp-umd": "^0.2.0"
   }
 }
